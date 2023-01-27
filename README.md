@@ -9,3 +9,4 @@ ImageSpire also consists of some basic implementation object detection and facia
 <img src="Images/image1.png" width="600" height= "480"> <img src="Images/image3.png" width="600" height= "480">
 <img src="Images/image2.png" width="600" height= "480"> <img src="Images/image4.png" width="600" height= "480">
 
+<hr>
