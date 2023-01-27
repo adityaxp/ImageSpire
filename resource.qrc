@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="Images">
+    <file>imagenotfoundalt.jpg</file>
+    <file>imagenotfound.jpg</file>
+  </qresource>
+</RCC>

@@ -1,0 +1,684 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1170</width>
+    <height>1046</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ImageSpire By Aditya</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="Widget">
+   <property name="styleSheet">
+    <string notr="true">QWidget#Widget{background-color:qlineargradient(spread:pad, x1:0.065, y1:0.119, x2:0.955, y2:0.9375, stop:0 rgba(245, 227, 230, 255), stop:1 rgba(189, 216, 254, 255))}
+</string>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>0</y>
+      <width>461</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 24pt &quot;Comic Sans MS&quot;;
+color:rgb(255, 255, 255)</string>
+    </property>
+    <property name="text">
+     <string>Welcome! to ImageSpire</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>60</y>
+      <width>301</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 12pt &quot;Comic Sans MS&quot;;
+color:rgb(255, 255, 255)</string>
+    </property>
+    <property name="text">
+     <string>Please pick an image to continue</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>100</y>
+      <width>481</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+ border: 2px solid gray;
+ border-radius: 10px;
+ padding-left: 10px;
+ padding-right: 10px;
+}
+
+QLineEdit:hover{
+	border: 2px solid rgb(189, 216, 254)
+}
+
+</string>
+    </property>
+    <property name="placeholderText">
+     <string>Image file path</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>100</y>
+      <width>111</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+border-radius: 10px;
+color:#fff;
+font: 75 8pt &quot;Comic Sans MS&quot;;
+background-color:qlineargradient(spread:pad, x1:0.06, y1:0.119318, x2:1, y2:1, stop:0 rgba(189, 216, 254, 255), stop:1 rgba(225, 134, 180, 255))
+
+}</string>
+    </property>
+    <property name="text">
+     <string>Browse</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>150</y>
+      <width>481</width>
+      <height>361</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/Images/imagenotfound.jpg&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>530</y>
+      <width>301</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 12pt &quot;Comic Sans MS&quot;;
+color:rgb(255, 255, 255)</string>
+    </property>
+    <property name="text">
+     <string>Pixel RGB Data</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>570</y>
+      <width>111</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+border-radius: 10px;
+color:#fff;
+font: 75 8pt &quot;Comic Sans MS&quot;;
+background-color:qlineargradient(spread:pad, x1:0.06, y1:0.119318, x2:1, y2:1, stop:0 rgba(189, 216, 254, 255), stop:1 rgba(225, 134, 180, 255))
+
+}</string>
+    </property>
+    <property name="text">
+     <string>Generate</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>570</y>
+      <width>111</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+border-radius: 10px;
+color:#fff;
+font: 75 8pt &quot;Comic Sans MS&quot;;
+background-color:qlineargradient(spread:pad, x1:0.06, y1:0.119318, x2:1, y2:1, stop:0 rgba(189, 216, 254, 255), stop:1 rgba(225, 134, 180, 255))
+
+}</string>
+    </property>
+    <property name="text">
+     <string>Export to CSV</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>620</y>
+      <width>481</width>
+      <height>341</height>
+     </rect>
+    </property>
+    <column>
+     <property name="text">
+      <string>Position X</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Position Y</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Red</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Green</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Blue</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>60</y>
+      <width>301</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 12pt &quot;Comic Sans MS&quot;;
+color:rgb(255, 255, 255)</string>
+    </property>
+    <property name="text">
+     <string>Color palettes</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_4">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>100</y>
+      <width>111</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+border-radius: 10px;
+color:#fff;
+font: 75 8pt &quot;Comic Sans MS&quot;;
+background-color:qlineargradient(spread:pad, x1:0.06, y1:0.119318, x2:1, y2:1, stop:0 rgba(189, 216, 254, 255), stop:1 rgba(225, 134, 180, 255))
+
+}</string>
+    </property>
+    <property name="text">
+     <string>Generate</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>150</y>
+      <width>301</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 12pt &quot;Comic Sans MS&quot;;
+color:rgb(255, 255, 255)</string>
+    </property>
+    <property name="text">
+     <string>Dominant color:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>190</y>
+      <width>261</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 0, 0)</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>230</y>
+      <width>301</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 12pt &quot;Comic Sans MS&quot;;
+color:rgb(255, 255, 255)</string>
+    </property>
+    <property name="text">
+     <string>Palettes:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>270</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 0, 0)</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>270</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 0, 0)</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>900</x>
+      <y>270</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 0, 0)</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>320</y>
+      <width>301</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 12pt &quot;Comic Sans MS&quot;;
+color:rgb(255, 255, 255)</string>
+    </property>
+    <property name="text">
+     <string>Gray scale image</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_5">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>360</y>
+      <width>111</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+border-radius: 10px;
+color:#fff;
+font: 75 8pt &quot;Comic Sans MS&quot;;
+background-color:qlineargradient(spread:pad, x1:0.06, y1:0.119318, x2:1, y2:1, stop:0 rgba(189, 216, 254, 255), stop:1 rgba(225, 134, 180, 255))
+
+}</string>
+    </property>
+    <property name="text">
+     <string>Transform</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_6">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>360</y>
+      <width>111</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+border-radius: 10px;
+color:#fff;
+font: 75 8pt &quot;Comic Sans MS&quot;;
+background-color:qlineargradient(spread:pad, x1:0.06, y1:0.119318, x2:1, y2:1, stop:0 rgba(189, 216, 254, 255), stop:1 rgba(225, 134, 180, 255))
+
+}</string>
+    </property>
+    <property name="text">
+     <string>Save Image</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_13">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>410</y>
+      <width>261</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/Images/imagenotfoundalt.jpg&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_14">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>620</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 12pt &quot;Comic Sans MS&quot;;
+color:rgb(255, 255, 255)</string>
+    </property>
+    <property name="text">
+     <string>H, S, B values</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_2">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>710</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+ border: 2px solid gray;
+ border-radius: 10px;
+ padding-left: 10px;
+ padding-right: 10px;
+}
+
+QLineEdit:hover{
+	border: 2px solid rgb(189, 216, 254)
+}
+
+</string>
+    </property>
+    <property name="placeholderText">
+     <string>Hue</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_3">
+    <property name="geometry">
+     <rect>
+      <x>780</x>
+      <y>710</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+ border: 2px solid gray;
+ border-radius: 10px;
+ padding-left: 10px;
+ padding-right: 10px;
+}
+
+QLineEdit:hover{
+	border: 2px solid rgb(189, 216, 254)
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>Saturation</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_4">
+    <property name="geometry">
+     <rect>
+      <x>880</x>
+      <y>710</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+ border: 2px solid gray;
+ border-radius: 10px;
+ padding-left: 10px;
+ padding-right: 10px;
+}
+
+QLineEdit:hover{
+	border: 2px solid rgb(189, 216, 254)
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>Brightness</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_7">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>660</y>
+      <width>111</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+border-radius: 10px;
+color:#fff;
+font: 75 8pt &quot;Comic Sans MS&quot;;
+background-color:qlineargradient(spread:pad, x1:0.06, y1:0.119318, x2:1, y2:1, stop:0 rgba(189, 216, 254, 255), stop:1 rgba(225, 134, 180, 255))
+
+}</string>
+    </property>
+    <property name="text">
+     <string>Generate</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_15">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>760</y>
+      <width>181</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 12pt &quot;Comic Sans MS&quot;;
+color:rgb(255, 255, 255)</string>
+    </property>
+    <property name="text">
+     <string>Object Detection:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_8">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>800</y>
+      <width>131</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+border-radius: 10px;
+color:#fff;
+font: 75 8pt &quot;Comic Sans MS&quot;;
+background-color:qlineargradient(spread:pad, x1:0.06, y1:0.119318, x2:1, y2:1, stop:0 rgba(189, 216, 254, 255), stop:1 rgba(225, 134, 180, 255))
+
+}</string>
+    </property>
+    <property name="text">
+     <string>Detect Objects </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_16">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>850</y>
+      <width>201</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 12pt &quot;Comic Sans MS&quot;;
+color:rgb(255, 255, 255)</string>
+    </property>
+    <property name="text">
+     <string>Facial Recognization:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_9">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>890</y>
+      <width>131</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+border-radius: 10px;
+color:#fff;
+font: 75 8pt &quot;Comic Sans MS&quot;;
+background-color:qlineargradient(spread:pad, x1:0.06, y1:0.119318, x2:1, y2:1, stop:0 rgba(189, 216, 254, 255), stop:1 rgba(225, 134, 180, 255))
+
+}</string>
+    </property>
+    <property name="text">
+     <string>Recognize </string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_10">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>940</y>
+      <width>171</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+border-radius: 10px;
+color:#fff;
+font: 75 8pt &quot;Comic Sans MS&quot;;
+background-color:qlineargradient(spread:pad, x1:0.06, y1:0.119318, x2:1, y2:1, stop:0 rgba(189, 216, 254, 255), stop:1 rgba(225, 134, 180, 255))
+
+}</string>
+    </property>
+    <property name="text">
+     <string>Export all data to CSV</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_11">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>940</y>
+      <width>111</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+border-radius: 10px;
+color:#fff;
+font: 75 8pt &quot;Comic Sans MS&quot;;
+background-color:qlineargradient(spread:pad, x1:0.06, y1:0.119318, x2:1, y2:1, stop:0 rgba(189, 216, 254, 255), stop:1 rgba(225, 134, 180, 255))
+
+}</string>
+    </property>
+    <property name="text">
+     <string>Quit</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
